@@ -1,0 +1,16 @@
+//
+//  Demo01.pch
+//  Demo01
+//
+//  Created by Deo on 15/10/10.
+//  Copyright (c) 2015年 deo. All rights reserved.
+//
+
+#ifndef Demo01_Demo01_pch
+#define Demo01_Demo01_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "Common.h"
+#endif

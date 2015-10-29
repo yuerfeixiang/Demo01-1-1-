@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeNaviView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView alpha="0.20000000000000001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="底部背景2@.png" translatesAutoresizingMaskIntoConstraints="NO" id="HRy-nK-n81">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tau-de-iQQ">
+                    <rect key="frame" x="253" y="31" width="34" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="gh4-S1-Wcd"/>
+                        <constraint firstAttribute="height" constant="21" id="o0v-Tt-URF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="关注">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="gzAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="3MV-PZ-SAc"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irS-Ww-D11">
+                    <rect key="frame" x="80" y="32" width="34" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="CP0-fy-JUL"/>
+                        <constraint firstAttribute="width" constant="34" id="dvK-NV-DBo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="课堂">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="classAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="fhq-5E-Zz2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dpd-Nw-dKU">
+                    <rect key="frame" x="323" y="32" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="9dZ-5c-Nkd"/>
+                        <constraint firstAttribute="height" constant="20" id="VSA-xr-erb"/>
+                    </constraints>
+                    <state key="normal" image="搜索2@.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="searchAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="bAr-fo-jDA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cE3-oS-pQv">
+                    <rect key="frame" x="162" y="31" width="51" height="21"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="I8F-du-4Ub"/>
+                        <constraint firstAttribute="width" constant="51" id="zyG-VS-nbh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="舞蹈圈">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="danceAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="UCK-hf-K2V"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tau-de-iQQ" firstAttribute="leading" secondItem="cE3-oS-pQv" secondAttribute="trailing" constant="40" id="00l-lo-aDk"/>
+                <constraint firstAttribute="bottom" secondItem="irS-Ww-D11" secondAttribute="bottom" constant="11" id="2r7-oh-zaq"/>
+                <constraint firstItem="irS-Ww-D11" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="80" id="4gf-16-8EM"/>
+                <constraint firstAttribute="bottom" secondItem="Dpd-Nw-dKU" secondAttribute="bottom" constant="12" id="DqC-Ag-hqY"/>
+                <constraint firstAttribute="bottom" secondItem="cE3-oS-pQv" secondAttribute="bottom" constant="12" id="Gus-ab-Gn6"/>
+                <constraint firstItem="HRy-nK-n81" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LWA-hB-mJT"/>
+                <constraint firstAttribute="bottom" secondItem="tau-de-iQQ" secondAttribute="bottom" constant="12" id="ciO-oV-o8Z"/>
+                <constraint firstAttribute="bottom" secondItem="HRy-nK-n81" secondAttribute="bottom" id="cxN-zj-EEr"/>
+                <constraint firstAttribute="centerX" secondItem="cE3-oS-pQv" secondAttribute="centerX" id="hNw-a7-cOW"/>
+                <constraint firstAttribute="trailing" secondItem="Dpd-Nw-dKU" secondAttribute="trailing" constant="32" id="hSi-e5-hrn"/>
+                <constraint firstAttribute="trailing" secondItem="HRy-nK-n81" secondAttribute="trailing" id="w3P-D7-jvH"/>
+                <constraint firstItem="HRy-nK-n81" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="xsl-c6-YHg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="centerConstrain" destination="00l-lo-aDk" id="6bc-Qs-4BC"/>
+                <outlet property="classButton" destination="irS-Ww-D11" id="YyG-ts-mmk"/>
+                <outlet property="classLeftConstrain" destination="4gf-16-8EM" id="n8W-0K-wxd"/>
+                <outlet property="danceButton" destination="cE3-oS-pQv" id="cRe-01-ztw"/>
+                <outlet property="gzButton" destination="tau-de-iQQ" id="Hcq-kx-eRn"/>
+                <outlet property="searchButton" destination="Dpd-Nw-dKU" id="3uC-mh-Je7"/>
+                <outlet property="searchRightConstrain" destination="hSi-e5-hrn" id="YSd-ic-bd7"/>
+            </connections>
+            <point key="canvasLocation" x="315.5" y="294"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="底部背景2@.png" width="750" height="98"/>
+        <image name="搜索2@.png" width="30" height="30"/>
+    </resources>
+</document>
